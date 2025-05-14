@@ -1,0 +1,10 @@
+﻿﻿﻿User32.*
+
+Shell_NotifyIcon
+Shell_NotifyIconGetRect
+GetModuleHandle
+CreateRectRgn
+GetModuleHandleW
+IDI_APPLICATION
+
+WM_*

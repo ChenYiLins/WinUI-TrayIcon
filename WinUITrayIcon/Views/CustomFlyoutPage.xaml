@@ -1,0 +1,60 @@
+<Page
+    x:Class="WinUITrayIcon.Views.CustomFlyoutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:WinUITrayIcon.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.ContextFlyout>
+        <Flyout ShouldConstrainToRootBounds="False">
+
+            <Grid RowSpacing="8">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <TextBlock
+                    Grid.Row="0"
+                    Style="{StaticResource BodyStrongTextBlockStyle}"
+                    Text="PRO WIRELESS" />
+
+                <StackPanel
+                    Grid.Row="1"
+                    Orientation="Horizontal"
+                    Spacing="8">
+                    <FontIcon FontSize="8" Glyph="&#xE945;" />
+                    <TextBlock Style="{StaticResource CaptionTextBlockStyle}" Text="LIGHTSPEED" />
+                    <FontIcon FontSize="8" Glyph="&#xF5F9;" />
+                    <TextBlock Style="{StaticResource CaptionTextBlockStyle}" Text="88%" />
+                </StackPanel>
+
+                <Border
+                    Grid.Row="2"
+                    BorderBrush="{ThemeResource DividerStrokeColorDefault}"
+                    BorderThickness="0,1,0,0" />
+
+                <StackPanel
+                    Grid.Row="3"
+                    Padding="-16,0,-16,-12"
+                    Orientation="Vertical">
+                    <MenuFlyoutItem
+                        Height="32"
+                        Padding="11,0,11,0"
+                        Text="Launch G HUB" />
+                    <MenuFlyoutItem
+                        Height="32"
+                        Padding="11,0,11,0"
+                        Text="Quit" />
+                </StackPanel>
+
+            </Grid>
+
+        </Flyout>
+    </Page.ContextFlyout>
+
+</Page>
