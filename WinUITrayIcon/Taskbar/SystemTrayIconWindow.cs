@@ -6,7 +6,7 @@ using Windows.Win32.Foundation;
 using Windows.Win32.UI.WindowsAndMessaging;
 using WinUITrayIcon.Taskbar;
 
-namespace WinUITrayIcon.Utils.Taskbar;
+namespace WinUITrayIcon.Taskbar;
 
 public partial class SystemTrayIconWindow : IDisposable
 {

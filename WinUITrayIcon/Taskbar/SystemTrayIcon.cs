@@ -9,7 +9,7 @@ using Windows.Win32.Foundation;
 using Windows.Win32.UI.Shell;
 using Windows.Win32.UI.WindowsAndMessaging;
 using WinRT;
-using WinUITrayIcon.Utils.Taskbar;
+using WinUITrayIcon.Taskbar;
 using WinUITrayIcon.Views;
 
 namespace WinUITrayIcon.Taskbar;
